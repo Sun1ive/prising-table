@@ -56,24 +56,64 @@ body {
 }
 
 .menu {
-  width: 70%;
-}
-
-.menu ul {
+  box-sizing: border-box;
+  margin-left: 15px;
+  margin-right: 15px;
+  word-wrap: break-word;
+  width: calc(100% - 30px);
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
 }
 
 .menu-link {
   color: #fff;
+  padding: 0 15px;
+  transition: 0.3s;
+}
+
+.menu-link:hover {
+  color: #8debff;
 }
 
 .get-started-btn {
+  color: #fff;
   margin-left: 70px;
   border: 1px solid #fff;
   padding: 10px 20px;
   text-transform: uppercase;
   border-radius: 100px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.get-started-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.get-started-btn:active {
+  top: 1px;
+}
+
+.lowResMenu {
+  position: absolute;
+  display: none;
+  box-sizing: border-box;
+  margin-left: 15px;
+  margin-right: 15px;
+  word-wrap: break-word;
+  width: calc(83.33333333333334% - 30px);
+  justify-content: flex-end;
+}
+
+.lowResMenu img {
+  cursor: pointer;
 }
 
 .main-text {
@@ -136,14 +176,14 @@ body {
   font-weight: bold;
 }
 
-section {
+.firstSection {
   background-color: #fff;
 }
 
 .wrapper {
   max-width: 1500px;
   min-height: 1100px;
-  margin: 0 auto;
+  margin: 0 auto !important;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -158,6 +198,15 @@ section {
   color: #000;
   font-family: Maven Pro;
   max-width: 420px;
+  margin-top: 100px;
+}
+
+.wrapper .sectionOne__text h1 {
+  margin: 10px 0;
+}
+
+.wrapper .sectionOne__text p {
+  margin: 25px 0;
 }
 
 .wrapper .sectionOne__text .firstText {
@@ -258,13 +307,15 @@ section {
 }
 
 .container .features .button {
+  display: flex;
+  align-items: center;
   margin-top: 50px;
   text-transform: uppercase;
-  padding: 10px 45px;
+  padding: 10px 50px;
   border: 1px solid #d7dbe8;
   color: #d1d7e4;
   font-size: 12px;
-  line-height: 32px;
+  line-height: 30px;
   border-radius: 30px;
   font-weight: bold;
   cursor: pointer;
@@ -275,13 +326,258 @@ section {
   background-color: #6e45e2;
 }
 
+.secondSection {
+  background: url("../_img/background.png") no-repeat center;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  min-height: 520px;
+  position: relative;
+  z-index: 1;
+}
+
+.secondContainer {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  margin-left: 15px;
+  margin-right: 15px;
+  word-wrap: break-word;
+  color: #fff;
+  font-family: Maven Pro;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  height: 100%;
+  text-align: center;
+}
+
+.secondContainer .text {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.secondContainer .h1 {
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: -3.1px;
+  font-weight: 500;
+}
+
+.secondContainer .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondContainer .buttons .button {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #d1d7e4;
+  background-color: #fff;
+  padding: 20px 50px;
+  border-radius: 30px;
+  z-index: 5;
+  max-width: 190px;
+  margin: 25px 10px;
+  transition: 0.3s;
+}
+
+.secondContainer .buttons .button:last-child {
+  padding: 20px 25px;
+}
+
+.secondContainer .buttons .button:hover {
+  background-color: #6e45e2;
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+  background-color: #fff;
+  min-height: 205px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer .footbar {
+  max-width: 1840px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  justify-content: space-between;
+  min-height: 130px;
+  height: 100%;
+  align-items: center;
+  border-bottom: 1px solid #f2f2f3;
+}
+
+footer .footbar .fLogo {
+  box-sizing: border-box;
+  margin-left: 15px;
+  margin-right: 15px;
+  word-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #37374a;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 29px;
+}
+
+footer .footbar .fLogo img {
+  margin-right: 10px;
+}
+
+footer .footbar ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .footbar ul li a {
+  padding: 15px 30px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  color: #6a6a77;
+  transition: 0.3s;
+  border-radius: 30px;
+}
+
+footer .footbar ul li a:hover {
+  background-color: #6e45e2;
+  color: #fff;
+}
+
+footer .footbar ul li a .home {
+  color: #6e45e2;
+}
+
+footer .footbar ul li a .home:hover {
+  color: #fff;
+}
+
+.footFooter {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+  max-width: 1840px;
+  padding: 0 10px;
+}
+
+.footFooter .fText {
+  font-size: 20px;
+  font-weight: 500;
+  box-sizing: border-box;
+  margin-left: 15px;
+  margin-right: 15px;
+  word-wrap: break-word;
+}
+
+.footFooter .socials {
+  display: flex;
+  box-sizing: border-box;
+  margin-left: 15px;
+  margin-right: 15px;
+  word-wrap: break-word;
+}
+
+.footFooter .socials li {
+  margin: 0 5px;
+}
+
+.footFooter .socials li a {
+  color: #c0c0c0;
+}
+
+.footFooter .socials li a:hover {
+  color: #00b7e5;
+}
+
+.scrollTop {
+  height: 40px;
+  width: 40px;
+  box-shadow: inset 0px 1px 3px 0px #91b8b3;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: 0.3s;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.scrollTop:before {
+  content: "	\21E7";
+  position: absolute;
+  top: 2px;
+  left: 11px;
+  font-size: 30px;
+  color: #000;
+}
+
+.scrollTop:hover {
+  opacity: 1;
+}
+
 @media screen and (max-width: 1100px) {
   .container .features {
     padding: 50px;
   }
+
+  .container .features .logo {
+    height: 40%;
+  }
+
+  footer .footbar .fLogo {
+    width: calc(100% - 30px);
+  }
+
+  footer .footbar .fLogo {
+    margin-top: 10px;
+  }
+
+  footer .footbar ul {
+    width: calc(100% - 30px);
+  }
+
+  footer .footbar ul {
+    justify-content: space-around;
+  }
+
+  footer .footbar ul li a {
+    padding: 15px;
+  }
 }
 
 @media screen and (max-width: 960px) {
+  .menu-link {
+    padding: 0 5px;
+  }
+
+  .get-started-btn {
+    margin-left: 20px;
+  }
+
+  .get-started-btn {
+    padding: 10px 20px;
+  }
+
   .container {
     flex-direction: column;
   }
@@ -297,10 +593,109 @@ section {
   .container .features {
     width: calc(66.66666666666667% - 30px);
   }
+
+  footer .footbar ul {
+    width: calc(100% - 30px);
+  }
+
+  footer .footbar ul {
+    flex-direction: column;
+  }
+
+  footer .footbar ul {
+    align-items: center;
+  }
+
+  footer .footbar ul li {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .container .features .button {
+    padding: 20px 30px;
+  }
+
+  .secondContainer .buttons {
+    flex-direction: column;
+  }
+
+  .secondContainer .buttons .button {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 710px) {
+  .menu {
+    display: none;
+  }
+
+  .lowResMenu {
+    box-sizing: border-box;
+    margin-left: 15px;
+    margin-right: 15px;
+    word-wrap: break-word;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column;
+    align-items: flex-end;
+    z-index: 10;
+  }
+
+  .lowResMenu img {
+    max-width: 64px;
+    max-height: 64px;
+  }
+
+  .lowResMenu .subMenu {
+    display: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 50px;
+    right: -5px;
+  }
+
+  .lowResMenu .subMenu li {
+    padding: 5px 15px;
+    background-color: #a7edff;
+    border-radius: 5px;
+    border-bottom: 1px sold #000;
+    transition: 0.3s;
+  }
+
+  .lowResMenu .subMenu li:hover {
+    background-color: #00a8d3;
+  }
+
+  .lowResMenu .subMenu li a {
+    color: #000;
+    font-family: Maven Pro;
+    font-weight: 400;
+  }
+
+  .scrollTop {
+    right: 10px;
+    bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 560px) {
   .container .features {
     width: calc(100% - 30px);
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .footFooter .fText {
+    font-size: 12px;
+  }
+
+  .footFooter .fText {
+    margin-right: 5px;
+  }
+
+  .footFooter .socials {
+    padding: 0;
   }
 }
