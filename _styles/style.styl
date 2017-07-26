@@ -1,0 +1,213 @@
+//====================
+// import
+// ===================
+@import ("smart-grid.styl");
+@import ("settings.styl");
+//====================
+// global
+// ===================
+body
+	font-family 'Maven Pro', sans-serif;
+//====================
+// code
+// ===================
+
+.main
+	color: #fff
+	display flex
+	flex-direction column
+	justify-content space-between
+	align-items center
+	height 100vh
+	min-height 600px
+	background url("../_img/main-bg.png") no-repeat center
+	background-size: cover
+	position relative
+
+.main-overlay
+	position absolute
+	left 0
+	top 0
+	height: 100%
+	width 100%
+	opacity: 0.8
+	z-index: 0
+	background-image: linear-gradient( 150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+
+.header
+	display flex
+	justify-content space-between
+	align-items center
+	height: 10vh
+	width 90%
+	position relative
+	z-index: 2
+
+.menu
+	width 70%
+	ul
+		display flex
+		justify-content space-around
+
+.menu-link
+	color: #fff;
+	// text-transform: uppercase;
+
+.get-started-btn
+	margin-left: 70px
+	border: 1px solid #fff;
+	padding 10px 20px;
+	text-transform uppercase;
+	border-radius 100px;
+
+.main-text
+	display flex
+	flex-direction column
+	justify-content center
+	align-items center
+	position relative
+	z-index: 2
+	text-align center
+	h1
+		margin .5rem
+		font-size: 70px
+	span
+		display inline-block
+		&:after
+			content ""
+			width 20px
+			height 1px
+			background-color: #FFF
+			display inline-block
+			vertical-align middle
+			margin-left 10px
+		&:before
+			content ""
+			width 20px
+			height 1px
+			background-color: #FFF
+			display inline-block
+			vertical-align middle
+			margin-right 10px
+
+.main-arrow
+	width 50px
+	height 50px
+	background-color: #FFF
+	z-index 2
+	margin-bottom 50px
+	border-radius 50%
+	position relative
+	display flex
+	justify-content center
+	align-items center
+	box-shadow 0 0 18.7px 2.3px rgba(204,204,223, .5)
+	&:before
+		content "\2B07"
+		color: #000
+		font-size: 17px
+		font-weight bold
+
+section 
+	background-color: #FFF
+
+.wrapper
+	max-width 1500px
+	min-height 1100px
+	margin 0 auto
+	display flex
+	flex-flow column wrap;
+	align-items center
+	text-align center
+	col();
+	.sectionOne__text
+		color: #000;
+		font-family Maven Pro;
+		max-width 420px
+		.firstText
+			font-size: 25px
+			display inline-block
+			&:after
+				content ""
+				width 20px
+				height 1px
+				background-color: #6e45e2
+				display inline-block
+				vertical-align middle
+				margin-left 10px
+			&:before
+				content ""
+				width 20px
+				height 1px
+				background-color: #6e45e2
+				display inline-block
+				vertical-align middle
+				margin-right 10px
+		h1
+			font-size: 60px
+			color: #4f4f6f;
+		p
+			font-size: 16px
+			line-height: 28px
+			color: #c0c0c0;
+
+.container
+	display flex
+	md(flex-direction,column)
+	justify-content-md(center)
+	align-items-md(center)
+	.features
+		row-flex()
+		col-4()
+		col-md-8()
+		col-xs-12()
+		lg(padding, 50px)
+		margin 10px 25px
+		border 1px solid #d7dbe8
+		min-height 650px
+		justify-content center
+		padding 70px
+		border-radius 40px
+		transition .4s;
+		&:hover
+			 box-shadow: 0px 0px 81.88px 10.12px rgba(204, 204, 223, 0.71);
+		.logo
+			height: 50%
+			margin-top 20px
+			&__text
+				padding 30px 0
+				text-transform uppercase
+				color: #9fa4af;
+				font-size: 16px
+				font-family Maven Pro;
+				font-weight bold
+			&__price
+				color: #4f4f6f;
+				font-size: 20px
+				font-family Maven Pro;
+				font-weight bold
+				span
+					font-size 50px
+				sup
+					vertical-align super
+					font-size: 100%
+					font-weight 300
+		.info
+			color: #b7bbc3;
+			font-size: 16px;
+			font-family Maven Pro;
+			line-height 28px
+		.button
+			margin-top 50px
+			text-transform uppercase
+			padding 10px 45px
+			border 1px solid #d7dbe8
+			color: #d1d7e4
+			font-size: 12px
+			line-height 32px
+			border-radius 30px
+			font-weight bold
+			cursor: pointer
+			transition .4s;
+			&:hover
+				background-color: #6e45e2;

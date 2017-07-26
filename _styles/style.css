@@ -1,0 +1,306 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: url("../_img/cork-wallet.png");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.main {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  min-height: 600px;
+  background: url("../_img/main-bg.png") no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+.main-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  z-index: 0;
+  background-image: linear-gradient(150deg, #88d3ce 0%, #6e45e2 100%);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 90%;
+  position: relative;
+  z-index: 2;
+}
+
+.menu {
+  width: 70%;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-link {
+  color: #fff;
+}
+
+.get-started-btn {
+  margin-left: 70px;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 100px;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.main-text h1 {
+  margin: 0.5rem;
+  font-size: 70px;
+}
+
+.main-text span {
+  display: inline-block;
+}
+
+.main-text span:after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.main-text span:before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.main-arrow {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  z-index: 2;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 18.7px 2.3px rgba(204,204,223,0.5);
+}
+
+.main-arrow:before {
+  content: "\2B07";
+  color: #000;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+section {
+  background-color: #fff;
+}
+
+.wrapper {
+  max-width: 1500px;
+  min-height: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  margin-left: 15px;
+  margin-right: 15px;
+  word-wrap: break-word;
+}
+
+.wrapper .sectionOne__text {
+  color: #000;
+  font-family: Maven Pro;
+  max-width: 420px;
+}
+
+.wrapper .sectionOne__text .firstText {
+  font-size: 25px;
+  display: inline-block;
+}
+
+.wrapper .sectionOne__text .firstText:after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #6e45e2;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.wrapper .sectionOne__text .firstText:before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #6e45e2;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.wrapper .sectionOne__text h1 {
+  font-size: 60px;
+  color: #4f4f6f;
+}
+
+.wrapper .sectionOne__text p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #c0c0c0;
+}
+
+.container {
+  display: flex;
+}
+
+.container .features {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  width: calc(33.333333333333336% - 30px);
+  margin: 10px 25px;
+  border: 1px solid #d7dbe8;
+  min-height: 650px;
+  justify-content: center;
+  padding: 70px;
+  border-radius: 40px;
+  transition: 0.4s;
+}
+
+.container .features:hover {
+  box-shadow: 0px 0px 81.88px 10.12px rgba(204,204,223,0.71);
+}
+
+.container .features .logo {
+  height: 50%;
+  margin-top: 20px;
+}
+
+.container .features .logo__text {
+  padding: 30px 0;
+  text-transform: uppercase;
+  color: #9fa4af;
+  font-size: 16px;
+  font-family: Maven Pro;
+  font-weight: bold;
+}
+
+.container .features .logo__price {
+  color: #4f4f6f;
+  font-size: 20px;
+  font-family: Maven Pro;
+  font-weight: bold;
+}
+
+.container .features .logo__price span {
+  font-size: 50px;
+}
+
+.container .features .logo__price sup {
+  vertical-align: super;
+  font-size: 100%;
+  font-weight: 300;
+}
+
+.container .features .info {
+  color: #b7bbc3;
+  font-size: 16px;
+  font-family: Maven Pro;
+  line-height: 28px;
+}
+
+.container .features .button {
+  margin-top: 50px;
+  text-transform: uppercase;
+  padding: 10px 45px;
+  border: 1px solid #d7dbe8;
+  color: #d1d7e4;
+  font-size: 12px;
+  line-height: 32px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.container .features .button:hover {
+  background-color: #6e45e2;
+}
+
+@media screen and (max-width: 1100px) {
+  .container .features {
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container {
+    justify-content: center;
+  }
+
+  .container {
+    align-items: center;
+  }
+
+  .container .features {
+    width: calc(66.66666666666667% - 30px);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .container .features {
+    width: calc(100% - 30px);
+  }
+}
