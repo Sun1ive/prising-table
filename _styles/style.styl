@@ -122,7 +122,7 @@ body
 	width 50px
 	height 50px
 	background-color: #FFF
-	z-index 2
+	z-index 10
 	margin-bottom 50px
 	border-radius 50%
 	position relative
@@ -130,6 +130,7 @@ body
 	justify-content center
 	align-items center
 	box-shadow 0 0 18.7px 2.3px rgba(204,204,223, .5)
+	cursor pointer
 	&:before
 		content "\2B07"
 		color: #000
@@ -245,7 +246,7 @@ body
 			font-weight bold
 			cursor: pointer
 			transition .4s;
-			sm(padding, 20px 30px)
+			sm(padding, 7px 35px)
 			&:hover
 				background-color: #6e45e2;
 
@@ -345,7 +346,7 @@ footer
 				md(margin, 10px)
 				a
 					padding 15px 30px
-					lg(padding, 15px)
+					lg(padding, 15px 35px)
 					font-size: 16px
 					line-height 19px
 					font-weight 500
@@ -408,19 +409,26 @@ footer
 			padding 0
 			margin 0
 			top 50px
-			right: -5px
+			right: -35px
 			li
-				padding 5px 15px
+				text-align center
 				background-color: #A7EDFF
 				border-radius 5px
-				border-bottom 1px sold #000
+				border 1px solid #000
+				padding 10px 5px
 				transition .3s;
+				opacity: .7
 				&:hover
-					background-color: #A7EDFF - 50%
+					background-color: #fff + 50%
+					opacity: 1
 				a
+					padding 5px 15px
 					color: #000
 					font-family Maven Pro
 					font-weight 400
+
+
+
 	.scrollTop
 		right 10px
 		bottom 50px
@@ -432,7 +440,7 @@ footer
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
 	position fixed
 	right: 20px
-	bottom 20px
+	bottom 60px
 	border-radius 50%;
 	opacity: .5;
 	transition .3s;

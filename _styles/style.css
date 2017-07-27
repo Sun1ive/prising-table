@@ -159,7 +159,7 @@ body {
   width: 50px;
   height: 50px;
   background-color: #fff;
-  z-index: 2;
+  z-index: 10;
   margin-bottom: 50px;
   border-radius: 50%;
   position: relative;
@@ -167,6 +167,7 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 18.7px 2.3px rgba(204,204,223,0.5);
+  cursor: pointer;
 }
 
 .main-arrow:before {
@@ -514,7 +515,7 @@ footer .footbar ul li a .home:hover {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
   position: fixed;
   right: 20px;
-  bottom: 20px;
+  bottom: 60px;
   border-radius: 50%;
   opacity: 0.5;
   transition: 0.3s;
@@ -561,7 +562,7 @@ footer .footbar ul li a .home:hover {
   }
 
   footer .footbar ul li a {
-    padding: 15px;
+    padding: 15px 35px;
   }
 }
 
@@ -613,7 +614,7 @@ footer .footbar ul li a .home:hover {
 
 @media screen and (max-width: 780px) {
   .container .features .button {
-    padding: 20px 30px;
+    padding: 7px 35px;
   }
 
   .secondContainer .buttons {
@@ -653,22 +654,26 @@ footer .footbar ul li a .home:hover {
     padding: 0;
     margin: 0;
     top: 50px;
-    right: -5px;
+    right: -35px;
   }
 
   .lowResMenu .subMenu li {
-    padding: 5px 15px;
+    text-align: center;
     background-color: #a7edff;
     border-radius: 5px;
-    border-bottom: 1px sold #000;
+    border: 1px solid #000;
+    padding: 10px 5px;
     transition: 0.3s;
+    opacity: 0.7;
   }
 
   .lowResMenu .subMenu li:hover {
-    background-color: #00a8d3;
+    background-color: #fff;
+    opacity: 1;
   }
 
   .lowResMenu .subMenu li a {
+    padding: 5px 15px;
     color: #000;
     font-family: Maven Pro;
     font-weight: 400;
